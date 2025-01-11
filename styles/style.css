@@ -189,7 +189,7 @@ background-color: #09A15C;
     border: 1px solid rgba(14, 14, 14, 0.15);
     background-image: url(../assets/quote-bg.png);
     background-repeat: no-repeat;
-    background-position-x: left,top;
+    background-position: 24px 6px;
 }
 .quotation_title{
     font-family: "Fira Sans", serif;
@@ -203,8 +203,41 @@ background-color: #09A15C;
 }
 
 /* ===== opinion styles ===== */
-/* Opinion is pending now */
+.opinion_table{
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+}
+th{
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-collapse: collapse;
+    text-align: left;
+    padding: 14px;
+    width: 100%;
+    background-color: rgba(198, 228, 214, 1);
+    font-family: "Fira Sans", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
 
+table, tr, td{
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-collapse: collapse;
+    text-align: left;
+    padding: 24px;
+    width: 100%;
+    font-family: "Fira Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+table, tr, td, select{
+    padding: 24px;
+}
+select, option{
+    padding: 12px 15px;
+    background-color: rgba(198, 228, 214, 1);
+    border-radius: 4px;
+}
 
 /* ===== news styles ===== */
 .card_column{
@@ -279,7 +312,11 @@ input[type="text"]{
     margin-top: 30px;
 }
 
-/* ===== subscribe styles ===== */
+/* ===== newsletter styles ===== */
+
+
+
+
 /* 
 
     font-family: "Fira Sans", serif;
