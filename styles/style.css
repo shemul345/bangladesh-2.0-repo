@@ -294,14 +294,14 @@ select, option{
     color: #0E0E0E;
 }
 input[type="text"]{
-    padding: 20px 0;
-    width: 1032px;
-    text-align: center;
-    padding: 20px 0;
     font-family: "Fira Sans", serif;
     font-size: 20px;
     font-weight: 400;
     color: rgba(14, 14, 14, 0.3);
+    padding: 20px 0;
+    width: 1032px;
+    text-align: center;
+    padding: 20px 0;
     border: none;
 }
 .other_tk{
@@ -313,8 +313,67 @@ input[type="text"]{
 }
 
 /* ===== newsletter styles ===== */
+.newsletter{
+    margin-top: 80px;
+}
+.newsletter_container{
+    text-align: center;
+    background-color: rgba(198, 228, 214, 1);
+    padding: 80px 265px;
+    border-radius: 24px;
+}
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
+.subscribe{
+    font-family: "Fira Sans", serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 17px 34px;
+    background-color: #006A50;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+}
+.subscribe_email{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.subscribe_description{
+    margin-top: 25px;
+}
 
+/* ===== footer styles ===== */
+.footer{
+    background-color: #ffffff;
+    margin-top: 80px;
+}
+.footer_container{
+    text-align: center;
+    padding: 50px 0;
+}
+.footer_title{
+    font-family: "Fira Sans", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0E0E0E;
+    margin-left: 45px;
+}
+.footer_icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+ul li{
+    list-style: none;
+} 
+hr{
+    width: 1230px;
+}
 
 
 /* 
