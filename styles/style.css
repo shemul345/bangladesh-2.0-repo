@@ -1,8 +1,21 @@
 
 /* ===== common styles ===== */
-
+body{
+    background-color: #F1F1F3;
+}
+header{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 /* ===== shared styles ===== */
+    .text_center{
+        text-align: center;
+    }
     .btn_primary{
         font-family: "Fira Sans", serif;
         font-size: 18px;
@@ -19,7 +32,38 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         background: #4F95DA;
     }
+    .section_title{
+        font-family: "Fira Sans", serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(14, 14, 14, 1);
+    }
+    .section_description{
+        font-family: "Fira Sans", serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(14, 14, 14, 0.7);
+        margin-top: -15px;
+    }
 
+    .card_title{
+        font-family: "Fira Sans", serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgba(14, 14, 14, 0.8);
+        margin-top: 10px;
+    }
+    .card_description{
+        font-family: "Fira Sans", serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(14, 14, 14, 0.7);
+        margin-top: -10px;
+    }
+    .card_container{
+        display: flex;
+        gap: 24px;
+    }
 /* ===== nav styles ===== */
 .nav_title{
     font-family: "Fira Sans", serif;
@@ -53,7 +97,6 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 160px;
 }
 
 /* ===== banner styles ===== */
@@ -61,7 +104,7 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     background-color: #C6E4D6;
-    max-width: 1280px;
+    max-width: 1166px;
     padding: 100px 60px;
     align-items: center;
     margin: 0 auto;
@@ -86,8 +129,157 @@ nav ul li{
     max-width: 475px;
 }
 
+/* ===== pillar styles ===== */
+.pillar_column{
+    padding: 24px;
+    background-color: white;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+}
+
+/* ===== vision styles ===== */
+.vision_column{
+    padding: 32px;
+    border-radius: 16px;
+}
+.vision_1st_column{
+    background-color: rgba(84, 144, 245, 0.2);
+}
+.vision_2nd_column{
+    background-color: rgba(198, 228, 214, 1)
+}
+.vision_3rd_column{
+    background-color: rgba(247, 235, 207, 1)
+}
+.btn_vision{
+    font-family: "Fira Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: none;
+}
+.btn_vision:hover{
+        transition: .5s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        background: rgba(24, 224, 235, 0.91);
+}
+.btn_1st_vision{
+    background-color: #5490F5;;
+    }
+.btn_2nd_vision{
+background-color: #09A15C;
+}
+.btn_3rd_vision{
+    background-color: #FFC239;
+    }
+.vision_description{
+    margin-bottom: 30px;
+}
+
+/* ===== quotation styles ===== */
+.quotation{
+    margin-top: 32px;
+}
+.quotation_container{
+    background-color: #ffffff;
+    padding: 48px 24px 10px 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background-image: url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: left,top;
+}
+.quotation_title{
+    font-family: "Fira Sans", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(14, 14, 14, 0.8);
+    margin-top: 12px;
+}
+.quotation_description{
+    margin-top: -25px;
+}
+
+/* ===== opinion styles ===== */
+/* Opinion is pending now */
 
 
+/* ===== news styles ===== */
+.card_column{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 48px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    margin-top: 30px;
+}
+.news_card_image{
+    border-radius: 24px;
+}
+.news_card_title{
+    margin-bottom: 10px;
+}
+.date_time{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.news_card_description{
+    margin-bottom: 40px;
+}
+
+/* ===== donate styles ===== */
+.donate_items{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.donate_description{
+    padding: 0 90px;
+}
+.donate_amount{
+    padding: 40px;
+    font-family: "Fira Sans", serif;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: rgba(198, 228, 214, 1);
+    color: rgba(14, 14, 14, 0.8);
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    cursor: pointer;
+}
+.donate_amount:hover{
+        transition: .5s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        background: #4F95DA;
+        color: #ffffff;
+}
+.donate_amount:active{
+    background: #ffffff;
+    color: #0E0E0E;
+}
+input[type="text"]{
+    padding: 20px 0;
+    width: 1032px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Fira Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(14, 14, 14, 0.3);
+    border: none;
+}
+.other_tk{
+    margin-left: 125px;
+}
+.donate_btn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ===== subscribe styles ===== */
 /* 
 
     font-family: "Fira Sans", serif;
